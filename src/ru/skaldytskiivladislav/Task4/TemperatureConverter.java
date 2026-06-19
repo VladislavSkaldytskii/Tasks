@@ -1,3 +1,5 @@
+package ru.skaldytskiivladislav.Task4;
+
 public class TemperatureConverter {
     public static final double ABSOLUTE_ZERO_CELSIUS = -273.15;
     public static final double BOILING_POINT_CELSIUS = 100.0;

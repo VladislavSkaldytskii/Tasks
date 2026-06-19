@@ -1,3 +1,4 @@
+package ru.skaldytskiivladislav.Task4;
 
 // 1. Неправильно назван класс, не подходит под формат правил закрепленных конвенцией
 public class StudentCalculator {
@@ -16,7 +17,7 @@ public class StudentCalculator {
     }
 
     public static void main(String[] args) {
-//8.переменные называем сначала с маленькой буквы
+//8.переменные называем сначала с маленькой буквы, а последующие слова в названии с большой
         double myRadius = 5;
         System.out.println(calculateCircleArea(myRadius));
     }
