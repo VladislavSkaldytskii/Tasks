@@ -4,23 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acf1678c-b7a0-47f4-9ea9-42bb19738ec7" name="Changes" comment="completing task">
-      <change afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task2/Finance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task2/Overflow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task2/StudentProfile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task2/TempConverter.java" afterDir="false" />
+    <list default="true" id="acf1678c-b7a0-47f4-9ea9-42bb19738ec7" name="Changes" comment="completing task 2.1">
+      <change afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/task2_2/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/task2_2/ExchangeOfVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/task2_2/IncrementalPuzzle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloJava/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloJava/StudentCalculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloJava/Task2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloJava/Task3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task1/Задание 1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task1/1/Задание 1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task2/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task1/2/Task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task3/Task3.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task1/3/Task3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task3/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task1/3/Task3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task4/StudentCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task1/4/StudentCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task4/Task4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task1/4/Task4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task4/TemperatureConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task1/4/TemperatureConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloJava/ru/skaldytskiivladislav/Task1/1/Задание 1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloJava/ru/skaldytskiivladislav/Task1/4/Task4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloJava/ru/skaldytskiivladislav/Task2/Finance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloJava/ru/skaldytskiivladislav/Task2/Overflow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloJava/ru/skaldytskiivladislav/Task2/StudentProfile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloJava/ru/skaldytskiivladislav/Task2/Task2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloJava/ru/skaldytskiivladislav/Task2/TempConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloJava/ru/skaldytskiivladislav/Task3/Task3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloJava/ru/skaldytskiivladislav/Task4/StudentCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HelloJava/ru/skaldytskiivladislav/Task4/TemperatureConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task1/1/Задание 1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/task1_1/Задание 1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task1/2/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/task1_2/Task2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task1/3/Task3.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/task1_3/Task3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task1/3/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/task1_3/Task3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task1/4/StudentCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/task1_4/StudentCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task1/4/Task4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/task1_4/Task4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task1/4/TemperatureConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/task1_4/TemperatureConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task2/1/Finance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/task2_1/Finance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task2/1/Overflow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/task2_1/Overflow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task2/1/StudentProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/task2_1/StudentProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/Task2/1/TempConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/skaldytskiivladislav/task2_1/TempConverter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +73,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Calculator.executor": "Run",
+    "Application.ExchangeOfVariables.executor": "Run",
     "Application.Finance.executor": "Run",
+    "Application.IncrementalPuzzle.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.Overflow.executor": "Run",
     "Application.Person.executor": "Run",
@@ -87,7 +100,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -101,7 +114,33 @@
       <recent name="C:\Users\admin\Desktop\Задания\HelloJava\src\ru\skaldytskiivladislav\Task1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TempConverter">
+  <component name="RunManager" selected="Application.ExchangeOfVariables">
+    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.skaldytskiivladislav.task2_2.Calculator" />
+      <module name="HelloJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.skaldytskiivladislav.task2_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExchangeOfVariables" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.skaldytskiivladislav.task2_2.ExchangeOfVariables" />
+      <module name="HelloJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.skaldytskiivladislav.task2_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Finance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.skaldytskiivladislav.Task2.Finance" />
       <module name="HelloJava" />
@@ -115,32 +154,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Overflow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.skaldytskiivladislav.Task2.Overflow" />
+    <configuration name="IncrementalPuzzle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.skaldytskiivladislav.task2_2.IncrementalPuzzle" />
       <module name="HelloJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.skaldytskiivladislav.Task2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.skaldytskiivladislav.Task4.StudentCalculator" />
-      <module name="HelloJava" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentProfile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.skaldytskiivladislav.Task2.StudentProfile" />
-      <module name="HelloJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.skaldytskiivladislav.Task2.*" />
+          <option name="PATTERN" value="ru.skaldytskiivladislav.task2_2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TempConverter" />
+        <item itemvalue="Application.ExchangeOfVariables" />
+        <item itemvalue="Application.IncrementalPuzzle" />
+        <item itemvalue="Application.Calculator" />
         <item itemvalue="Application.Finance" />
-        <item itemvalue="Application.Overflow" />
-        <item itemvalue="Application.StudentProfile" />
-        <item itemvalue="Application.StudentCalculator" />
+        <item itemvalue="Application.TempConverter" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +213,9 @@
       <workItem from="1781629762875" duration="835000" />
       <workItem from="1781630616448" duration="26000" />
       <workItem from="1781888637392" duration="1559000" />
-      <workItem from="1782514006413" duration="4816000" />
+      <workItem from="1782514006413" duration="5195000" />
+      <workItem from="1782599411896" duration="3234000" />
+      <workItem from="1782649094981" duration="2798000" />
     </task>
     <task id="LOCAL-00001" summary="completing 2 tasks">
       <option name="closed" value="true" />
@@ -220,7 +241,31 @@
       <option name="project" value="LOCAL" />
       <updated>1781889890040</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="completing task 2.1">
+      <option name="closed" value="true" />
+      <created>1782519090513</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782519090513</updated>
+    </task>
+    <task id="LOCAL-00005" summary="completing task 2.1">
+      <option name="closed" value="true" />
+      <created>1782519143239</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1782519143241</updated>
+    </task>
+    <task id="LOCAL-00006" summary="completing task 2.1">
+      <option name="closed" value="true" />
+      <created>1782519233981</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1782519233981</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,9 +283,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <MESSAGE value="completing 2 tasks" />
     <MESSAGE value="completing task 1" />
     <MESSAGE value="completing task" />
-    <option name="LAST_COMMIT_MESSAGE" value="completing task" />
+    <MESSAGE value="completing task 2.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="completing task 2.1" />
   </component>
 </project>

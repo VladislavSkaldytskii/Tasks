@@ -1,4 +1,4 @@
-package ru.skaldytskiivladislav.Task4;
+package ru.skaldytskiivladislav.task1_4;
 
 public class TemperatureConverter {
     public static final double ABSOLUTE_ZERO_CELSIUS = -273.15;

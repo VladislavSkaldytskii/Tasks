@@ -1,4 +1,4 @@
-package ru.skaldytskiivladislav.Task2;
+package ru.skaldytskiivladislav.task1_2;
 
 public class Task2 {
     public static void main(String[] args) {

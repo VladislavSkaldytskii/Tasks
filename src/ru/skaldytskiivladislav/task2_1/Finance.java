@@ -1,4 +1,4 @@
-package ru.skaldytskiivladislav.Task2;
+package ru.skaldytskiivladislav.task2_1;
 
 import java.math.BigDecimal;
 

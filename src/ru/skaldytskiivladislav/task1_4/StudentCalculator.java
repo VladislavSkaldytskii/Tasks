@@ -1,4 +1,4 @@
-package ru.skaldytskiivladislav.Task4;
+package ru.skaldytskiivladislav.task1_4;
 
 // 1. Неправильно назван класс, не подходит под формат правил закрепленных конвенцией
 public class StudentCalculator {
