@@ -12,6 +12,7 @@ public class StudentCalculator {
 // 6.должны быть пробелы вокруг операторов
         double area = PI * radius * radius;
 // 7.у булевых переменных имя должно читаться как вопрос с ответом да/нет
+        //9. Создана неиспользуемая переменная
         boolean IsResult = true;
         return area;
     }
