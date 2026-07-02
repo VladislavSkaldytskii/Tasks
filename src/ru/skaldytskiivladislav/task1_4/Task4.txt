@@ -21,3 +21,5 @@ bOILINGPOINT_CELSIUS(плохо)                                  BOILING_POINT_
 Пример:
 boiling(плохо)                                                isAboveBoiling(хорошо)
 6.Не создавать неиспользуемые переменные, что бы в дальнейшем не запутаться и не запутать других.
+Например:
+boolean IsResult = true;(плохо)                               boolean isAboveBoiling = fahrenheit > BOILING_POINT_FAHRENHEIT;(хорошо)
