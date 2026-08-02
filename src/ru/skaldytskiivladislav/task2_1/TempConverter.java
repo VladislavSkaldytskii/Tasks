@@ -1,14 +1,23 @@
 package ru.skaldytskiivladislav.task2_1;
 
 public class TempConverter {
+
+    public static double celsiusToKelvin(double celsius) {
+        return celsius + 273.15;
+    }
+
+    public static double celsiusToFahrenheit(double celsius) {
+        return celsius * 9 / 5 + 32;
+    }
+
     public static void convert(double celsius) {
 
-        double fahrenheit = celsius * 9 / 5 + 32;
-        double k = celsius + 273.15;
+        double fahrenheit = celsiusToFahrenheit(celsius);
+        double kelvin = celsiusToKelvin(celsius);
 
         System.out.println("Цельсий: " + celsius + " С");
         System.out.println("Фаренгейт: " + fahrenheit + " F");
-        System.out.println("Кельвин: " + k + " K");
+        System.out.println("Кельвин: " + kelvin + " K");
         System.out.println();
 
     }
@@ -23,3 +32,4 @@ public class TempConverter {
         convert(-40);
     }
 }
+

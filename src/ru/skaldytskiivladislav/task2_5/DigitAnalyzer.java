@@ -37,5 +37,6 @@ public class DigitAnalyzer {
         System.out.printf("Максимальная цифра: %d%n", maxDigit);
         System.out.printf("Палиндром: %s%n",isPalindrome ? "Да" : "Нет");
 
+
     }
 }
