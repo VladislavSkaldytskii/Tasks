@@ -58,10 +58,10 @@ public class MathUtils {
     }
 
     public static void main(String[] args) {
-        System.out.println("Минимум: " + min(14,25));
-        System.out.println("Максимум: " + max(14,25));
-        System.out.println("Clamp: " + clamp(14,25, 34));
-        System.out.println("Clamp: " + clamp(14,25, 34));
+        System.out.println("Минимум: " + min(14, 25));
+        System.out.println("Максимум: " + max(14, 25));
+        System.out.println("Clamp: " + clamp(14, 25, 34));
+        System.out.println("Clamp: " + clamp(14, 25, 34));
         System.out.println("Высокостный 2000год : " + isLeapYear(2000));
         System.out.println("Высокостный 2023год : " + isLeapYear(2023));
 
@@ -71,8 +71,7 @@ public class MathUtils {
         System.out.println("177F = " + celsius + "C");
 
         System.out.println("5! = " + factorial(5));
-        System.out.println("6^2 = " + power(6,2));
-
+        System.out.println("6^2 = " + power(6, 2));
 
     }
 }

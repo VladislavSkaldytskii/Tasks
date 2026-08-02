@@ -34,7 +34,7 @@ public class ArrayStats {
         int zero = 0;
 
         for (int value : numbers)
-            if (value > 0) positive ++;
+            if (value > 0) positive++;
             else if (value < 0) negative++;
             else zero++;
 
