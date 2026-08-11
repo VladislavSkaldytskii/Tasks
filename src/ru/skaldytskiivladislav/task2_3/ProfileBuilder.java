@@ -10,15 +10,13 @@ public class ProfileBuilder {
         String name = scanner.nextLine();
         System.out.println("Введите фамилию: ");
         String lastName = scanner.nextLine();
-        int age;
+        System.out.println("Введите возраст: ");
+        int age = scanner.nextInt();
 
-        while (true) {
+        while (age < 0 || age > 150) {
+            System.out.println("Возраст должен быть от 0 до 150");
             System.out.println("Введите возраст: ");
             age = scanner.nextInt();
-            if (age >= 0 && age <= 150) {
-                break;
-            }
-            System.out.println("Возраст должен быть от 0 до 150");
         }
 
         scanner.nextLine();
