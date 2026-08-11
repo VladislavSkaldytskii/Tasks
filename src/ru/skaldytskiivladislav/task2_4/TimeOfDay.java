@@ -37,7 +37,7 @@ public class TimeOfDay {
             timeOfDay = "Ночь";
         }
         boolean isWeekday = day >= 1 && day <= 5;
-        boolean isWorkingHours = hour >= 9 && day < 18;
+        boolean isWorkingHours = hour >= 9 && hour < 18;
 
         boolean isWorkTime = isWeekday && isWorkingHours;
 
