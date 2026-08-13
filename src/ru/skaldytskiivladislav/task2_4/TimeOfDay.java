@@ -1,24 +1,29 @@
 package ru.skaldytskiivladislav.task2_4;
 
+import java.time.DayOfWeek;
+import java.time.LocalDateTime;
+
 public class TimeOfDay {
 
-    public static void main(String[] args) {
+    static public void timeOfDay(LocalDateTime dateTime) {
 
-        int hour = 14;
-        int day = 3;
-        String timeOfDay;
+        int hour = dateTime.getHour();
+        DayOfWeek day = dateTime.getDayOfWeek();
+
         String dayName;
 
         switch (day) {
-            case 1 -> dayName = "Понедельник";
-            case 2 -> dayName = "Вторник";
-            case 3 -> dayName = "Среда";
-            case 4 -> dayName = "Четверг";
-            case 5 -> dayName = "Пятница";
-            case 6 -> dayName = "Суббота";
-            case 7 -> dayName = "Воскресение";
-            default -> dayName = "Ведите день недели от 1-7";
+            case MONDAY -> dayName = "Понедельник";
+            case TUESDAY -> dayName = "Вторник";
+            case WEDNESDAY -> dayName = "Среда";
+            case THURSDAY -> dayName = "Четверг";
+            case FRIDAY -> dayName = "Пятница";
+            case SATURDAY -> dayName = "Суббота";
+            case SUNDAY -> dayName = "Воскресенье";
+            default -> dayName = "Неизвестный день";
         }
+
+        String timeOfDay;
 
         if (hour >= 5 && hour <= 11) {
 
@@ -36,7 +41,7 @@ public class TimeOfDay {
 
             timeOfDay = "Ночь";
         }
-        boolean isWeekday = day >= 1 && day <= 5;
+        boolean isWeekday = day != DayOfWeek.SATURDAY && day != DayOfWeek.SUNDAY;
         boolean isWorkingHours = hour >= 9 && hour < 18;
 
         boolean isWorkTime = isWeekday && isWorkingHours;
@@ -44,7 +49,17 @@ public class TimeOfDay {
         System.out.printf("Час: %d%n", hour);
         System.out.printf("День недели: %s%n", dayName);
         System.out.printf("Время суток: %s%n", timeOfDay);
-        System.out.printf("Рабочее время: %s%n", isWorkTime ? "Да" : " Нет");
+        System.out.printf("Рабочее время: %s%n%n", isWorkTime ? "Да" : "Нет");
+    }
 
+    public static void main(String[] args) {
+
+        timeOfDay(LocalDateTime.of(2026, 8, 10, 10, 30));
+
+        timeOfDay(LocalDateTime.of(2026, 8, 15, 20, 0));
+
+        timeOfDay(LocalDateTime.of(2026, 8, 13, 3, 0));
+
+        timeOfDay(LocalDateTime.of(2026, 5, 9, 3, 0));
     }
 }

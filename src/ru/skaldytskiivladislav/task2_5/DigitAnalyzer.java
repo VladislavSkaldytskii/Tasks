@@ -4,10 +4,18 @@ import java.util.Random;
 
 public class DigitAnalyzer {
 
-    public static void main(String[] args) {
+    public static void digitAnalyzer(int number) {
 
-        int number = 12345;
-        int temp = number;
+        int temp = Math.abs(number);
+
+        if (temp == 0) {
+            System.out.printf("Число: %d%n", number);
+            System.out.printf("Цифр: %d%n", 0);
+            System.out.printf("Сумма цифр: %d%n", 0);
+            System.out.printf("Максимальная цифра: %d%n", 0);
+            System.out.printf("Палиндром: %s%n%n", "Да");
+            return;
+        }
         int digitCount = 0;
         int digitSum = 0;
         int maxDigit = 0;
@@ -35,8 +43,15 @@ public class DigitAnalyzer {
         System.out.printf("Цифр: %d%n", digitCount);
         System.out.printf("Сумма цифр: %d%n", digitSum);
         System.out.printf("Максимальная цифра: %d%n", maxDigit);
-        System.out.printf("Палиндром: %s%n",isPalindrome ? "Да" : "Нет");
+        System.out.printf("Палиндром: %s%n%n", isPalindrome ? "Да" : "Нет");
 
+    }
 
+    public static void main(String[] args) {
+
+        digitAnalyzer(12345);
+        digitAnalyzer(-12345);
+        digitAnalyzer(0);
+        digitAnalyzer(1000);
     }
 }

@@ -2,10 +2,9 @@ package ru.skaldytskiivladislav.task2_4;
 
 public class GuessGame {
 
-    public static void main(String[] args) {
+    public static void guessGame(int guess) {
 
         int secret = 42;
-        int guess = 42;
 
         if (guess < secret) {
 
@@ -17,5 +16,12 @@ public class GuessGame {
 
             System.out.println("Угадал! Это 42");
         }
+    }
+
+    public static void main(String[] args) {
+
+        guessGame(30);
+        guessGame(50);
+        guessGame(42);
     }
 }
