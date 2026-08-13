@@ -1,6 +1,7 @@
 package ru.skaldytskiivladislav.task2_4;
 
 public class GradeConverter {
+
     public static void convertSwitch(int score) {
 
         if (score < 0 || score > 100) {
