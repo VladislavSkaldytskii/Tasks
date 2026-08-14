@@ -2,9 +2,7 @@ package ru.skaldytskiivladislav.task2_6;
 
 public class TextStats {
 
-    public static void main(String[] args) {
-
-        String text = "A man a plan a canal Panama";
+    public static void textStats(String text) {
 
         String[] words = text.split(" ");
         int wordCount = words.length;
@@ -33,6 +31,10 @@ public class TextStats {
         System.out.printf("Самое длинное слово: %s%n", longestWord);
         System.out.printf("Самое короткое слово: %s%n", shortestWord);
         System.out.printf("Средняя длина слова: %.2f%n", averageLength);
+    }
 
+    public static void main(String[] args) {
+
+        textStats("A man a plan a canal Panama");
     }
 }

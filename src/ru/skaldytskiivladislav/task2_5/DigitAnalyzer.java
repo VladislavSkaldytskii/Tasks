@@ -10,7 +10,7 @@ public class DigitAnalyzer {
 
         if (temp == 0) {
             System.out.printf("Число: %d%n", number);
-            System.out.printf("Цифр: %d%n", 0);
+            System.out.printf("Цифр: %d%n", 1);
             System.out.printf("Сумма цифр: %d%n", 0);
             System.out.printf("Максимальная цифра: %d%n", 0);
             System.out.printf("Палиндром: %s%n%n", "Да");
@@ -37,7 +37,7 @@ public class DigitAnalyzer {
             temp /= 10;
         }
 
-        boolean isPalindrome = number == reversed;
+        boolean isPalindrome = Math.abs(number) == reversed;
 
         System.out.printf("Число: %d%n", number);
         System.out.printf("Цифр: %d%n", digitCount);
@@ -52,6 +52,7 @@ public class DigitAnalyzer {
         digitAnalyzer(12345);
         digitAnalyzer(-12345);
         digitAnalyzer(0);
-        digitAnalyzer(1000);
+        digitAnalyzer(121);
+
     }
 }

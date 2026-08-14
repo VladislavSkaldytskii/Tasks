@@ -71,6 +71,6 @@ public class TextProcessor {
         System.out.println();
 
         System.out.println(isPalindrome("Hello"));
-        System.out.println( isPalindrome("А роза упала на лапу Азора"));
+        System.out.println(isPalindrome("А роза упала на лапу Азора"));
     }
 }

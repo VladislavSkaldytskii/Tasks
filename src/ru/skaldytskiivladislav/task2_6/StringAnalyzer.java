@@ -2,9 +2,7 @@ package ru.skaldytskiivladislav.task2_6;
 
 public class StringAnalyzer {
 
-    public static void main(String[] args) {
-
-        String text = "Hello World! 123";
+    public static void stringAnalyzer(String text) {
 
         int spaces = 0;
         int digits = 0;
@@ -41,5 +39,11 @@ public class StringAnalyzer {
         System.out.printf("Последнее вхождение \"o\": индекс %d%n", text.lastIndexOf('o'));
         System.out.printf("Подстрока [0, 5]: \"%s\"%n", text.substring(0, 5));
         System.out.printf("После замены \"World\" на \"Java\": \"%s\"%n", text.replace("World", "Java"));
+
+    }
+
+    public static void main(String[] args) {
+
+        stringAnalyzer("Hello World! 123");
     }
 }
