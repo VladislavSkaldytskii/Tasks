@@ -3,7 +3,6 @@ package ru.skaldytskiivladislav.task2_4;
 public class SmartCalc {
 
     public static void smartCalc(int a, int b, char operator) {
-
         switch (operator) {
             case '+' -> System.out.printf("%d + %d = %d%n", a, b, a + b);
             case '-' -> System.out.printf("%d - %d = %d%n", a, b, a - b);
@@ -27,7 +26,6 @@ public class SmartCalc {
     }
 
     public static void main(String[] args) {
-
         smartCalc(50, 50, '/');
         smartCalc(2, 0, '%');
     }

@@ -3,7 +3,6 @@ package ru.skaldytskiivladislav.task2_6;
 public class FormattedTable {
 
     public static void main(String[] args) {
-
         String name1 = "Иван Иванов";
         int age1 = 20;
         double grade1 = 4.70;
@@ -17,10 +16,7 @@ public class FormattedTable {
         double grade3 = 3.70;
 
         System.out.println("+----+------------------+------+--------+");
-
         System.out.printf("| %-2s | %-16s | %-4s | %-6s |%n", "№", "Имя", "Воз.", "Балл");
-
-
         System.out.println("+----+------------------+------+--------+");
         System.out.printf("| %2d | %-16s | %4d | %6.2f |%n", 1, name1, age1, grade1);
         System.out.printf("| %2d | %-16s | %4d | %6.2f |%n", 2, name2, age2, grade2);

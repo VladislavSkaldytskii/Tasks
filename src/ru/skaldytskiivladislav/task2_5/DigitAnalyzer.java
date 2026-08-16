@@ -5,8 +5,12 @@ import java.util.Random;
 public class DigitAnalyzer {
 
     public static void digitAnalyzer(int number) {
-
         int temp = Math.abs(number);
+        int digitCount = 0;
+        int digitSum = 0;
+        int maxDigit = 0;
+        int reversed = 0;
+        boolean isPalindrome = Math.abs(number) == reversed;
 
         if (temp == 0) {
             System.out.printf("Число: %d%n", number);
@@ -16,28 +20,17 @@ public class DigitAnalyzer {
             System.out.printf("Палиндром: %s%n%n", "Да");
             return;
         }
-        int digitCount = 0;
-        int digitSum = 0;
-        int maxDigit = 0;
-        int reversed = 0;
 
         while (temp > 0) {
             int digit = temp % 10;
-
             digitCount++;
-
             digitSum += digit;
-
             if (digit > maxDigit) {
                 maxDigit = digit;
             }
-
             reversed = reversed * 10 + digit;
-
             temp /= 10;
         }
-
-        boolean isPalindrome = Math.abs(number) == reversed;
 
         System.out.printf("Число: %d%n", number);
         System.out.printf("Цифр: %d%n", digitCount);
@@ -48,11 +41,9 @@ public class DigitAnalyzer {
     }
 
     public static void main(String[] args) {
-
         digitAnalyzer(12345);
         digitAnalyzer(-12345);
         digitAnalyzer(0);
         digitAnalyzer(121);
-
     }
 }

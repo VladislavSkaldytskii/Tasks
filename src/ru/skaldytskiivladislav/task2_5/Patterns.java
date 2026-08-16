@@ -3,7 +3,6 @@ package ru.skaldytskiivladislav.task2_5;
 public class Patterns {
 
     public static void square(int n) {
-
         System.out.println();
         System.out.println("Квадрат");
 
@@ -18,14 +17,12 @@ public class Patterns {
     }
 
     public static void triangle(int n) {
-
         System.out.println();
         System.out.println("Треугольник");
 
         for (int i = 1; i <= n; i++) {
 
             for (int j = 1; j <= i; j++) {
-
                 System.out.print("* ");
             }
             System.out.println();
@@ -33,7 +30,6 @@ public class Patterns {
     }
 
     public static void pyramid(int n) {
-
         System.out.println();
         System.out.println("Пирамида");
 
@@ -54,7 +50,6 @@ public class Patterns {
     }
 
     public static void main(String[] args) {
-
         int n = 5;
 
         square(n);

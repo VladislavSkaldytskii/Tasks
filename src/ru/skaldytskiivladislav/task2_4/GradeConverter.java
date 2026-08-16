@@ -33,14 +33,12 @@ public class GradeConverter {
     }
 
     public static void main(String[] args) {
-
         int[] scores = {95, 80, 65, 45, 100, 0, -5, 101};
-        for (int score : scores) {
 
+        for (int score : scores) {
             System.out.printf("Оценка: %d%n", score);
             convertSwitch(score);
             convertIf(score);
-            System.out.println();
         }
     }
 }

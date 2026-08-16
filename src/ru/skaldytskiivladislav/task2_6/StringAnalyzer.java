@@ -3,28 +3,19 @@ package ru.skaldytskiivladislav.task2_6;
 public class StringAnalyzer {
 
     public static void stringAnalyzer(String text) {
-
         int spaces = 0;
         int digits = 0;
         int letters = 0;
 
         for (int i = 0; i < text.length(); i++) {
-
             char ch = text.charAt(i);
-
             if (Character.isDigit(ch)) {
-
                 digits++;
-
             } else if (ch == ' ') {
-
                 spaces++;
-
             } else if (Character.isLetter(ch)) {
-
                 letters++;
             }
-
         }
         System.out.printf("Строка: \"%s \"%n", text);
         System.out.printf("Длина: %d%n", text.length());
@@ -43,7 +34,6 @@ public class StringAnalyzer {
     }
 
     public static void main(String[] args) {
-
         stringAnalyzer("Hello World! 123");
     }
 }

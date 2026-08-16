@@ -4,14 +4,13 @@ import java.util.Arrays;
 
 public class ArrayStats {
     public static void main(String[] args) {
-
         int[] numbers = {10, 32, 51, 48, 5, 8, 123, 11, 0};
-
         int summ = 0;
+        double avg = (double) summ / numbers.length;
+
         for (int value : numbers) {
             summ += value;
         }
-        double avg = (double) summ / numbers.length;
 
         int max = numbers[0];
         int min = numbers[0];
@@ -48,7 +47,5 @@ public class ArrayStats {
         System.out.println("Положительных: " + positive);
         System.out.println("Отрицательных: " + negative);
         System.out.println("Нулей: " + negative);
-
     }
-
 }
