@@ -1,26 +1,38 @@
 package ru.skaldytskiivladislav.task2_6;
 
+
+import java.util.List;
+
 public class FormattedTable {
+    public static class StudentProfile {
+        String name;
+        int age;
+        double grade;
 
-    public static void main(String[] args) {
-        String name1 = "Иван Иванов";
-        int age1 = 20;
-        double grade1 = 4.70;
+        public StudentProfile(String name, int age, double grade) {
+            this.name = name;
+            this.age = age;
+            this.grade = grade;
+        }
+    }
 
-        String name2 = "Мария Петрова";
-        int age2 = 21;
-        double grade2 = 4.90;
-
-        String name3 = "Алексей Смирнов";
-        int age3 = 19;
-        double grade3 = 3.70;
-
+    public static void printInfoStudent(List<StudentProfile> studentProfiles) {
         System.out.println("+----+------------------+------+--------+");
         System.out.printf("| %-2s | %-16s | %-4s | %-6s |%n", "№", "Имя", "Воз.", "Балл");
         System.out.println("+----+------------------+------+--------+");
-        System.out.printf("| %2d | %-16s | %4d | %6.2f |%n", 1, name1, age1, grade1);
-        System.out.printf("| %2d | %-16s | %4d | %6.2f |%n", 2, name2, age2, grade2);
-        System.out.printf("| %2d | %-16s | %4d | %6.2f |%n", 3, name3, age3, grade3);
+        for (int i = 0; i < studentProfiles.size(); i++) {
+            StudentProfile s = studentProfiles.get(i);
+            System.out.printf("| %2d | %-16s | %4d | %6.2f |%n", i + 1, s.name, s.age, s.grade);
+        }
         System.out.println("+----+------------------+------+--------+");
+    }
+
+    public static void main(String[] args) {
+        List<StudentProfile> students = List.of(
+                new StudentProfile("Иван Иванов", 20, 4.70),
+                new StudentProfile("Алексей Смирнов", 19, 3.70),
+                new StudentProfile("Мария Петрова", 21, 4.90)
+        );
+        printInfoStudent(students);
     }
 }

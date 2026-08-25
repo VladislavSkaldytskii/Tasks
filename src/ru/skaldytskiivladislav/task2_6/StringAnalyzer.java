@@ -1,8 +1,19 @@
 package ru.skaldytskiivladislav.task2_6;
 
 public class StringAnalyzer {
+    public static class TextAnalyzer {
+        int spaces;
+        int digits;
+        int letters;
 
-    public static void stringAnalyzer(String text) {
+        public TextAnalyzer(int spaces, int digits, int letters) {
+            this.spaces = spaces;
+            this.digits = digits;
+            this.letters = letters;
+        }
+    }
+
+    public static TextAnalyzer stringAnalyzer(String text) {
         int spaces = 0;
         int digits = 0;
         int letters = 0;
@@ -17,23 +28,28 @@ public class StringAnalyzer {
                 letters++;
             }
         }
+        return new TextAnalyzer(spaces, digits, letters);
+    }
+
+    public static void printInfo(String text, TextAnalyzer textAnalyzer) {
         System.out.printf("Строка: \"%s \"%n", text);
         System.out.printf("Длина: %d%n", text.length());
         System.out.printf("В верхнем регистре: \"%s\"%n", text.toUpperCase());
         System.out.printf("В нижнем регистре: \"%s\"%n", text.toLowerCase());
         System.out.printf("Без пробелов по краям: \"%s\"%n", text.trim());
-        System.out.printf("Количество пробелов: %d%n", spaces);
-        System.out.printf("Количество цифр: %d%n", digits);
-        System.out.printf("Количество букв: %d%n", letters);
+        System.out.printf("Количество пробелов: %d%n", textAnalyzer.spaces);
+        System.out.printf("Количество цифр: %d%n", textAnalyzer.digits);
+        System.out.printf("Количество букв: %d%n", textAnalyzer.letters);
         System.out.printf("Содержит \"World\": %s%n", text.contains("World") ? "да" : "нет");
         System.out.printf("Первое вхождение \"o\": индекс %d%n", text.indexOf('o'));
         System.out.printf("Последнее вхождение \"o\": индекс %d%n", text.lastIndexOf('o'));
         System.out.printf("Подстрока [0, 5]: \"%s\"%n", text.substring(0, 5));
         System.out.printf("После замены \"World\" на \"Java\": \"%s\"%n", text.replace("World", "Java"));
-
     }
 
     public static void main(String[] args) {
-        stringAnalyzer("Hello World! 123");
+        String text = "Hello World! 123";
+        printInfo(text, stringAnalyzer(text));
+
     }
 }

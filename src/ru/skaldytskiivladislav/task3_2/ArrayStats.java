@@ -3,17 +3,14 @@ package ru.skaldytskiivladislav.task3_2;
 import java.util.Arrays;
 
 public class ArrayStats {
-    public static void main(String[] args) {
-        int[] numbers = {10, 32, 51, 48, 5, 8, 123, 11, 0};
+    public static void arrayStats(int[] numbers) {
         int summ = 0;
-        double avg = (double) summ / numbers.length;
+        int max = numbers[0];
+        int min = numbers[0];
 
         for (int value : numbers) {
             summ += value;
         }
-
-        int max = numbers[0];
-        int min = numbers[0];
 
         for (int i = 1; i < numbers.length; i++) {
             if (numbers[i] > max) max = numbers[i];
@@ -32,10 +29,12 @@ public class ArrayStats {
         int negative = 0;
         int zero = 0;
 
-        for (int value : numbers)
+        for (int value : numbers) {
             if (value > 0) positive++;
             else if (value < 0) negative++;
             else zero++;
+        }
+        double avg = (double) summ / numbers.length;
 
         System.out.println("Массив: " + Arrays.toString(numbers));
         System.out.printf("Сумма: %d%n", summ);
@@ -46,6 +45,11 @@ public class ArrayStats {
         System.out.println("Нечетных: " + odd);
         System.out.println("Положительных: " + positive);
         System.out.println("Отрицательных: " + negative);
-        System.out.println("Нулей: " + negative);
+        System.out.println("Нулей: " + zero);
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {10, 32, 51, 48, 5, 8, 123, 11, 0};
+        arrayStats(numbers);
     }
 }

@@ -1,18 +1,17 @@
 package ru.skaldytskiivladislav.task2_5;
 
 public class FizzBuzz {
-
-    public static void fizzBuzz(int i) {
-        if (i % 15 == 0) {
+    public static void fizzBuzz(int numberToCheck) {
+        if (numberToCheck % 15 == 0) {
             System.out.print("FizzBuzz");
-        } else if (i % 3 == 0) {
+        } else if (numberToCheck % 3 == 0) {
             System.out.print("Fizz");
-        } else if (i % 5 == 0) {
+        } else if (numberToCheck % 5 == 0) {
             System.out.print("Buzz");
         } else {
-            System.out.print(i);
+            System.out.print(numberToCheck);
         }
-        if (i < 100) {
+        if (numberToCheck < 100) {
             System.out.print(", ");
         }
     }

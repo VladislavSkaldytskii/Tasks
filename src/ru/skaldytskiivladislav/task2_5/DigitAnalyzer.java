@@ -1,24 +1,26 @@
 package ru.skaldytskiivladislav.task2_5;
 
-import java.util.Random;
-
 public class DigitAnalyzer {
+    public static class NumberAnalysis {
+        int digitCount;
+        int digitSum;
+        int maxDigit;
 
-    public static void digitAnalyzer(int number) {
+        public NumberAnalysis(int digitCount, int digitSum, int maxDigit) {
+            this.digitCount = digitCount;
+            this.digitSum = digitSum;
+            this.maxDigit = maxDigit;
+        }
+    }
+
+    public static NumberAnalysis analyzeNumber(int number) {
         int temp = Math.abs(number);
         int digitCount = 0;
         int digitSum = 0;
         int maxDigit = 0;
-        int reversed = 0;
-        boolean isPalindrome = Math.abs(number) == reversed;
 
         if (temp == 0) {
-            System.out.printf("Число: %d%n", number);
-            System.out.printf("Цифр: %d%n", 1);
-            System.out.printf("Сумма цифр: %d%n", 0);
-            System.out.printf("Максимальная цифра: %d%n", 0);
-            System.out.printf("Палиндром: %s%n%n", "Да");
-            return;
+            digitCount = 1;
         }
 
         while (temp > 0) {
@@ -28,22 +30,34 @@ public class DigitAnalyzer {
             if (digit > maxDigit) {
                 maxDigit = digit;
             }
+            temp /= 10;
+        }
+        return new NumberAnalysis(digitCount, digitSum, maxDigit);
+    }
+
+    public static boolean isPalindrome(int number) {
+        int temp = Math.abs(number);
+        int reversed = 0;
+
+        while (temp > 0) {
+            int digit = temp % 10;
             reversed = reversed * 10 + digit;
             temp /= 10;
         }
-
-        System.out.printf("Число: %d%n", number);
-        System.out.printf("Цифр: %d%n", digitCount);
-        System.out.printf("Сумма цифр: %d%n", digitSum);
-        System.out.printf("Максимальная цифра: %d%n", maxDigit);
-        System.out.printf("Палиндром: %s%n%n", isPalindrome ? "Да" : "Нет");
+        return Math.abs(number) == reversed;
 
     }
 
+    public static void printResults(int number, NumberAnalysis numberAnalysis, boolean isPalindrome) {
+        System.out.printf("Число: %d%n", number);
+        System.out.printf("Цифр: %d%n", numberAnalysis.digitCount);
+        System.out.printf("Сумма цифр: %d%n", numberAnalysis.digitSum);
+        System.out.printf("Максимальная цифра: %d%n", numberAnalysis.maxDigit);
+        System.out.printf("Палиндром: %s%n%n", isPalindrome ? "Да" : "Нет");
+    }
+
     public static void main(String[] args) {
-        digitAnalyzer(12345);
-        digitAnalyzer(-12345);
-        digitAnalyzer(0);
-        digitAnalyzer(121);
+        int number = 121;
+        printResults(number, analyzeNumber(number), isPalindrome(number));
     }
 }
