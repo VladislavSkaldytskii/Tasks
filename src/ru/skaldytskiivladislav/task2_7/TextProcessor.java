@@ -13,25 +13,25 @@ public class TextProcessor {
 
     public static String isValidEmail(String email) {
         if (email == null || email.isEmpty()) {
-            return "Email не должен быть пустым: ";
+            return "Ошибка: Email не должен быть пустым: ";
         } else if (email.contains(" ")) {
-            return "Уберите пробел.";
+            return "Ошибка: пробелы запрещены";
         } else if (email.indexOf("@") != email.lastIndexOf("@")) {
-            return "Должен быть 1 символ: @.";
+            return "Ошибка: более одного символа @";
         }
 
         int atIndex = email.indexOf("@");
 
         if (atIndex <= 0) {
-            return "Символ @ должен существовать и не быть 1.";
+            return "Ошибка: Символ @ не может быть 1 символом.";
         }
 
         int doIndex = email.indexOf(".", atIndex);
 
         if (doIndex == -1) {
-            return "после символа @ должна быть точка.";
+            return "Ошибка: после @ должна быть точка.";
         } else if (doIndex == atIndex + 1) {
-            return "точка не должна быть сразу после символа @. ";
+            return "Ошибка: точка сразу после @. ";
         }
 
         return "Верно";
@@ -48,10 +48,10 @@ public class TextProcessor {
     }
 
     public static void main(String[] args) {
-        System.out.println(countWords("Hello world"));
-        System.out.println(countWords(""));
-        System.out.println(countWords(null));
-        System.out.println(countWords("A man a plan a canal Panama"));
+        System.out.println("Количество слов: " + countWords("Hello world"));
+        System.out.println("Количество слов: " + countWords(""));
+        System.out.println("Количество слов: " + countWords(null));
+        System.out.println("Количество слов: " + countWords("A man a plan a canal Panama"));
         System.out.println();
         System.out.println(isValidEmail("test@mail.com"));
         System.out.println(isValidEmail("test@@mail.com"));
