@@ -1,6 +1,7 @@
 package ru.skaldytskiivladislav.task2_6;
 
 public class StringAnalyzer {
+
     public static class TextAnalyzer {
         int spaces;
         int digits;

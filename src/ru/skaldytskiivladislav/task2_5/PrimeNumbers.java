@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PrimeNumbers {
+
     public static class PrimeResult {
         List<Integer> primes;
         int count;

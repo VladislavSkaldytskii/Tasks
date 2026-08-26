@@ -1,6 +1,7 @@
 package ru.skaldytskiivladislav.task2_5;
 
 public class FizzBuzz {
+
     public static void fizzBuzz(int numberToCheck) {
         if (numberToCheck % 15 == 0) {
             System.out.print("FizzBuzz");

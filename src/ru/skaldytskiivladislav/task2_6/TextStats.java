@@ -1,6 +1,7 @@
 package ru.skaldytskiivladislav.task2_6;
 
 public class TextStats {
+
     public static class TextAnalysis {
         int wordCount;
         int charsWithoutSpaces;

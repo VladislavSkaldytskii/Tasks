@@ -1,6 +1,7 @@
 package ru.skaldytskiivladislav.task2_5;
 
 public class DigitAnalyzer {
+
     public static class NumberAnalysis {
         int digitCount;
         int digitSum;

@@ -3,6 +3,7 @@ package ru.skaldytskiivladislav.task3_2;
 import java.util.Arrays;
 
 public class ArrayStats {
+
     public static void arrayStats(int[] numbers) {
         int summ = 0;
         int max = numbers[0];

@@ -1,6 +1,7 @@
 package ru.skaldytskiivladislav.task2_5;
 
 public class Patterns {
+
     public static void square(int n) {
         System.out.println("Квадрат");
 

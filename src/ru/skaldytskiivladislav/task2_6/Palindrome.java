@@ -1,6 +1,7 @@
 package ru.skaldytskiivladislav.task2_6;
 
 public class Palindrome {
+
     public static String cleanedText(String text){
         return text.replaceAll("[^a-zA-Zа-яА-Я]", "").toLowerCase();
     }

@@ -1,6 +1,7 @@
 package ru.skaldytskiivladislav.task3_1;
 
 public class MathUtils {
+
     public static int min(int a, int b) {
         return Math.min(a, b);
     }

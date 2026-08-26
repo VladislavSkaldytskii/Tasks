@@ -4,6 +4,7 @@ package ru.skaldytskiivladislav.task2_6;
 import java.util.List;
 
 public class FormattedTable {
+
     public static class StudentProfile {
         String name;
         int age;
