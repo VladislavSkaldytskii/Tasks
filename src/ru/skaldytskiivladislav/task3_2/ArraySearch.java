@@ -41,7 +41,7 @@ public class ArraySearch {
         int index = linearSearch(arr, target);
 
         if (index != -1) {
-            System.out.println("Линейный поиск: число найденое по индексу " + index);
+            System.out.println("Линейный поиск: число найдено по индексу " + index);
         } else {
             System.out.println("Линейный поиск: число не найдено.");
         }

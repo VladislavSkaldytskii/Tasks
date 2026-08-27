@@ -23,7 +23,7 @@ public class TextProcessor {
         int atIndex = email.indexOf("@");
 
         if (atIndex <= 0) {
-            return "Ошибка: Символ @ не может быть 1 символом.";
+            return "Ошибка: Символ @ не может быть первым символом.";
         }
 
         int doIndex = email.indexOf(".", atIndex);

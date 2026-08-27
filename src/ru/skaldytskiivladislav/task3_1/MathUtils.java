@@ -28,7 +28,7 @@ public class MathUtils {
 
     public static long factorial(int n) {
         if (n < 0) {
-            throw new IllegalArgumentException("Факториал отрицательного числа не существует.");
+            throw new IllegalArgumentException("Ошибка: Факториал отрицательным не бывает.");
         }
 
         long result = 1;
@@ -41,7 +41,7 @@ public class MathUtils {
 
     public static long power(int base, int exp) {
         if (exp < 0) {
-            throw new IllegalArgumentException("Степень не может быть отрицательной.");
+            throw new IllegalArgumentException("Ошибка: Степень не может быть отрицательной.");
         }
 
         long result = 1;
@@ -53,8 +53,8 @@ public class MathUtils {
     }
 
     public static void main(String[] args) {
-        System.out.println("Минимум: " + min(14, 25));
-        System.out.println("Максимум: " + max(14, 25));
+        System.out.println("Минимальное значение: " + min(14, 25));
+        System.out.println("Максимальное значение: " + max(14, 25));
         System.out.println();
         System.out.println("Clamp: " + clamp(14, 25, 34));
         System.out.println("Clamp: " + clamp(14, 10, 20));

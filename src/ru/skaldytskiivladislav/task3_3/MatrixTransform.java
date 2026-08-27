@@ -37,9 +37,9 @@ public class MatrixTransform {
                 }
             }
         }
-        System.out.println("\nМексимальный элемент: " + max);
+        System.out.println("Максимальный элемент: " + max);
         System.out.println("Строка: " + row);
-        System.out.println("Стлбец: " + column);
+        System.out.println("Столбец: " + column);
     }
 }
 

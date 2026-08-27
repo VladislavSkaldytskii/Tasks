@@ -54,6 +54,7 @@ public class ArrayMerge {
         int[] first = {1, 5, 7, 9, 13, 14};
         int[] second = {2, 4, 6, 8, 17};
         Arrays.sort(first);
+        Arrays.sort(second);
 
         System.out.println("Первый массив: ");
         System.out.println(Arrays.toString(first));
@@ -70,5 +71,4 @@ public class ArrayMerge {
         System.out.println("Четные элементы: ");
         System.out.println(Arrays.toString(even));
     }
-
 }
