@@ -2,12 +2,7 @@ package ru.skaldytskiivladislav.task3_3;
 
 public class MatrixTransform {
 
-    public static void main(String[] args) {
-        int[][] matrix = {
-                {3, 4, 5, 6},
-                {9, 5, 3, 8},
-                {7, 4, 1, 2}
-        };
+    public static void transposeMatrix(int[][] matrix) {
         int[][] transpose = new int[matrix[0].length][matrix.length];
 
         for (int i = 0; i < matrix.length; i++) {
@@ -23,7 +18,9 @@ public class MatrixTransform {
             }
             System.out.println();
         }
+    }
 
+    public static void matrixInfo(int[][] matrix) {
         int max = matrix[0][0];
         int row = 0;
         int column = 0;
@@ -41,5 +38,16 @@ public class MatrixTransform {
         System.out.println("Строка: " + row);
         System.out.println("Столбец: " + column);
     }
-}
 
+
+    public static void main(String[] args) {
+        int[][] matrix = {
+                {3, 4, 5, 6},
+                {9, 5, 3, 8},
+                {7, 4, 1, 2}
+        };
+
+        transposeMatrix(matrix);
+        matrixInfo(matrix);
+    }
+}
