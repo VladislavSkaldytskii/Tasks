@@ -2,16 +2,17 @@ package ru.skaldytskiivladislav.task2_6;
 
 public class Palindrome {
 
-    public static String cleanedText(String text){
+    public static String cleanedText(String text) {
         return text.replaceAll("[^a-zA-Zа-яА-Я]", "").toLowerCase();
     }
+
     public static boolean isPalindrome(String text) {
         String cleaned = cleanedText(text);
         String reversed = new StringBuilder(cleaned).reverse().toString();
-       return cleaned.equals(reversed);
+        return cleaned.equals(reversed);
     }
 
-    public static void printInfo(String text){
+    public static void printInfo(String text) {
         String cleaned = cleanedText(text);
         boolean isPalindrome = isPalindrome(text);
 
@@ -21,8 +22,8 @@ public class Palindrome {
     }
 
     public static void main(String[] args) {
-    String text = "A man a plan a canal Panama";
+        String text = "A man a plan a canal Panama";
 
-    printInfo(text);
+        printInfo(text);
     }
 }

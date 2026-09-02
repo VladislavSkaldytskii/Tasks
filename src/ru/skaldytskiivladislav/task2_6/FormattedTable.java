@@ -20,8 +20,8 @@ public class FormattedTable {
     public static int getMaxNameLength(List<StudentProfile> students) {
         int maxLength = "Имя".length();
 
-        for(StudentProfile studentProfile : students){
-            if(studentProfile.name.length() > maxLength){
+        for (StudentProfile studentProfile : students) {
+            if (studentProfile.name.length() > maxLength) {
                 maxLength = studentProfile.name.length();
             }
         }
@@ -53,7 +53,7 @@ public class FormattedTable {
         printHeader(nameLength);
 
         for (int i = 0; i < studentProfiles.size(); i++) {
-            printRow(studentProfiles.get(i), nameLength,  i + 1);
+            printRow(studentProfiles.get(i), nameLength, i + 1);
         }
 
         printFooter(nameLength);
