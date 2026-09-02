@@ -19,8 +19,10 @@ public class Palindrome {
         System.out.printf("После очистки: \"%s\"%n", cleaned);
         System.out.printf("Палиндром: %s%n", isPalindrome ? "да" : "нет");
     }
+
     public static void main(String[] args) {
     String text = "A man a plan a canal Panama";
+
     printInfo(text);
     }
 }

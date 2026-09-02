@@ -17,15 +17,46 @@ public class FormattedTable {
         }
     }
 
-    public static void printInfoStudent(List<StudentProfile> studentProfiles) {
-        System.out.println("+----+------------------+------+--------+");
-        System.out.printf("| %-2s | %-16s | %-4s | %-6s |%n", "№", "Имя", "Воз.", "Балл");
-        System.out.println("+----+------------------+------+--------+");
-        for (int i = 0; i < studentProfiles.size(); i++) {
-            StudentProfile s = studentProfiles.get(i);
-            System.out.printf("| %2d | %-16s | %4d | %6.2f |%n", i + 1, s.name, s.age, s.grade);
+    public static int getMaxNameLength(List<StudentProfile> students) {
+        int maxLength = "Имя".length();
+
+        for(StudentProfile studentProfile : students){
+            if(studentProfile.name.length() > maxLength){
+                maxLength = studentProfile.name.length();
+            }
         }
-        System.out.println("+----+------------------+------+--------+");
+
+        return maxLength;
+    }
+
+    public static void printSeparator(int nameLength) {
+        System.out.println("+----+-" + "-".repeat(nameLength) + "-+------+--------+");
+    }
+
+    public static void printHeader(int nameLength) {
+        printSeparator(nameLength);
+
+        System.out.printf("| %-2s | %-" + nameLength + "s | %-4s | %-6s |%n", "№", "Имя", "Воз.", "Балл");
+    }
+
+    public static void printRow(StudentProfile studentProfile, int nameLength, int number) {
+        System.out.printf("| %2d | %-" + nameLength + "s | %4d | %6.2f |%n", number, studentProfile.name, studentProfile.age, studentProfile.grade);
+    }
+
+    public static void printFooter(int nameLength) {
+        printSeparator(nameLength);
+    }
+
+    public static void printInfoStudent(List<StudentProfile> studentProfiles) {
+        int nameLength = getMaxNameLength(studentProfiles);
+
+        printHeader(nameLength);
+
+        for (int i = 0; i < studentProfiles.size(); i++) {
+            printRow(studentProfiles.get(i), nameLength,  i + 1);
+        }
+
+        printFooter(nameLength);
     }
 
     public static void main(String[] args) {
@@ -34,6 +65,7 @@ public class FormattedTable {
                 new StudentProfile("Алексей Смирнов", 19, 3.70),
                 new StudentProfile("Мария Петрова", 21, 4.90)
         );
+
         printInfoStudent(students);
     }
 }
