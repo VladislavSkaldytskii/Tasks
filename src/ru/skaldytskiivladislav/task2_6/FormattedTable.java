@@ -37,6 +37,8 @@ public class FormattedTable {
         printSeparator(nameLength);
 
         System.out.printf("| %-2s | %-" + nameLength + "s | %-4s | %-6s |%n", "№", "Имя", "Воз.", "Балл");
+
+        printSeparator(nameLength);
     }
 
     public static void printRow(StudentProfile studentProfile, int nameLength, int number) {
