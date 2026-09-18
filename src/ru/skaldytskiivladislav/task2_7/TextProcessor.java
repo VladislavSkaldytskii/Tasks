@@ -13,7 +13,7 @@ public class TextProcessor {
 
     public static boolean isValidEmail(String email) {
         if (email == null || email.isEmpty()) {
-            //"Ошибка: Email не должен быть пустым: ");
+            //"Ошибка: Email не должен быть пустым: "
             return false;
         } else if (email.contains(" ")) {
             return false; //"Ошибка: пробелы запрещены";
@@ -39,30 +39,20 @@ public class TextProcessor {
             return false;//Ошибка: точка сразу после @. ";
         } else if (localPart.startsWith("-") || localPart.endsWith("-")) {
             return false; // Не может начинаться и оканчиваться на '-'
-        }
-
-        for (char c : localPart.toCharArray()) {
-            if (!(Character.isLetterOrDigit(c) || c == '.' || c == '_' || c == '%' || c == '+' || c == '-')) {
-                return false; // локальная часть состоит только из букв, цифр, '.', '_', '%', '+', '-'
-            }
-        }
-
-        for (char c : domainPart.toCharArray()) {
-            if (!(Character.isLetterOrDigit(c) || c == '.' || c == '-')) {
-                return false; // доменная часть состоит только из букв, цифр, '.', '_'
-            }
+        } else if (!localPart.matches("[A-Za-z0-9._%+-]+")) {
+            return false;//локальная часть состоит только из букв, цифр, '.', '_', '%', '+', '-'
+        } else if (!domainPart.matches("[A-Za-z0-9.-]+")) {
+            return false;//доменная часть состоит только из букв, цифр, '.', '_'
         }
 
         String[] domainParts = domainPart.split("\\.");
         String lastPart = domainParts[domainParts.length - 1];
         if (lastPart.length() < 2) {
-            return false;
+            return false;//Корректный домен, т.е. должно заканчиваться на '.' и как минимум 2 буквы
         }
 
-        for (char c : lastPart.toCharArray()) {
-            if (!(Character.isLetter(c))) {
-                return false; //Корректный домен, т.е. должно заканчиваться на '.' и как минимум 2 буквы
-            }
+        if (!lastPart.matches("[A-Za-z]+")) {
+            return false;
         }
         return true;
     }
@@ -88,7 +78,7 @@ public class TextProcessor {
         System.out.println(isValidEmail("testtest@mail..com"));
         System.out.println(isValidEmail("testtest@mail.c"));
         System.out.println(isValidEmail("-testtest@mail.com"));
-        System.out.println(isValidEmail("-testt%est@mail.com"));
+        System.out.println(isValidEmail("-testtest@mail.com"));
         System.out.println(isValidEmail("te%st+@mail.co.uk"));
 
         System.out.println();
