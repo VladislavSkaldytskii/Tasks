@@ -24,7 +24,6 @@ public class Car extends Vehicle {
     public String toString() {
         return super.toString() + String.format("Кол-во дверей: %d%n" +
                 "Вид топлива: %s%n", getDoors(), getFuelType());
-
     }
 
     public int getDoors() {
