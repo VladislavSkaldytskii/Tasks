@@ -109,6 +109,7 @@ public class TestMain {
                 "%nОбщий фонд оплаты труда: %.2f руб.%n",
                 totalSalary
         );
+        System.out.println("-".repeat(55));
 
         Product product1 = new Product(
                 1,

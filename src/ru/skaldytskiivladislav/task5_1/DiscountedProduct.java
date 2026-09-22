@@ -10,7 +10,7 @@ public class DiscountedProduct extends Product {
 
     @Override
     public String toString() {
-        return super.toString() + String.format("Скидка: %.1f, итоговая цена %.2f руб.", discountPercent, getFinalPrice());
+        return super.toString() + String.format(" Скидка: %.1f %%, итоговая цена %.2f руб.", discountPercent, getFinalPrice());
     }
 
     public double getFinalPrice() {
