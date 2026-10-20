@@ -23,9 +23,11 @@ public class GameBoard {
             }
             System.out.println();
         }
+
         for (int j = 0; j < board[0].length; j++) {
             board[0][j] = 'Q';
         }
+
         System.out.println("\nПроверка атак ферзей: ");
         for (int j = 0; j < board[0].length; j++) {
             for (int k = j + 1; k < board[0].length; k++) {
