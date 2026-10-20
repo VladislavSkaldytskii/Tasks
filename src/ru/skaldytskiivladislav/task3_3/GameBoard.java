@@ -26,16 +26,14 @@ public class GameBoard {
         for (int j = 0; j < board[0].length; j++) {
             board[0][j] = 'Q';
         }
-        int queens = 0;
+        System.out.println("\nПроверка атак ферзей: ");
         for (int j = 0; j < board[0].length; j++) {
-            if (board[0][j] == 'Q') {
-                queens++;
+            for (int k = j + 1; k < board[0].length; k++) {
+                if (board[0][j] == 'Q' && board[0][k] == 'Q') {
+                    System.out.printf("Ферзи, на позициях (0, %d) и (0, %d)  бьют друга друга%n", j, k);
+                }
             }
-        }
-        if (queens > 1) {
-            System.out.println("\nФерзи бьют друг друга по горизонтали.");
-        } else {
-            System.out.println("\nФерзи не бьют друг друга");
         }
     }
 }
+
