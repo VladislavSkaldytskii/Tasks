@@ -30,7 +30,7 @@ public class GameBoard {
         for (int j = 0; j < board[0].length; j++) {
             for (int k = j + 1; k < board[0].length; k++) {
                 if (board[0][j] == 'Q' && board[0][k] == 'Q') {
-                    System.out.printf("Ферзи, на позициях (0, %d) и (0, %d)  бьют друга друга%n", j, k);
+                    System.out.printf("Ферзи, на позициях (0, %d) и (0, %d) бьют друга друга%n", j, k);
                 }
             }
         }
