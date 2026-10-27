@@ -10,6 +10,9 @@ public class Student {
     private final int age;
     private final double grade;
 
+    private static final double EXCELLENT_GRADE = 4.5;
+    private static final int MINIMUM_AGE = 18;
+
     public Student(String name, String group, int age, double grade) {
         this.name = name;
         this.group = group;
@@ -20,15 +23,14 @@ public class Student {
     public void printInfo() {
         System.out.println("=".repeat(55));
         System.out.printf("Имя: %-10s | Возраст %-2d | Оценка: %.1f | Группа: %s%n", name, age, grade, group);
-
     }
 
     public boolean isExcellent() {
-        return grade >= 4.5;
+        return grade >= EXCELLENT_GRADE;
     }
 
-    public boolean canGraduate(int minimumAge) {
-        return age >= minimumAge;
+    public boolean canGraduate() {
+        return age >= MINIMUM_AGE;
     }
 
     public static void main(String[] args) {
@@ -38,15 +40,14 @@ public class Student {
 
         student1.printInfo();
         System.out.println("Отличник: " + student1.isExcellent());
-        System.out.println("Может выпуститься: " + student1.canGraduate(18));
+        System.out.println("Может выпуститься: " + student1.canGraduate());
 
         student2.printInfo();
         System.out.println("Отличник: " + student2.isExcellent());
-        System.out.println("Может выпуститься: " + student2.canGraduate(18));
+        System.out.println("Может выпуститься: " + student2.canGraduate());
 
         student3.printInfo();
         System.out.println("Отличник: " + student3.isExcellent());
-        System.out.println("Может выпуститься: " + student3.canGraduate(18));
-
+        System.out.println("Может выпуститься: " + student3.canGraduate());
     }
 }
