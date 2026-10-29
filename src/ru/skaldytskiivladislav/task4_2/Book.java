@@ -7,6 +7,8 @@ public class Book {
     private int numberOfPages;
     private double price;
 
+    private static final int CLASSIC_YEAR = 1950;
+
     public Book(String title, String author) {
         this(title, author, 0, 0, 0);
     }
@@ -28,7 +30,7 @@ public class Book {
     }
 
     public boolean isClassic() {
-        return year < 1950;
+        return year < CLASSIC_YEAR;
     }
 
     public void printInfo() {
