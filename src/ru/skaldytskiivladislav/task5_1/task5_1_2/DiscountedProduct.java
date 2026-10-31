@@ -1,4 +1,4 @@
-package ru.skaldytskiivladislav.task5_1;
+package ru.skaldytskiivladislav.task5_1.task5_1_2;
 
 public class DiscountedProduct extends Product {
     private double discountPercent;

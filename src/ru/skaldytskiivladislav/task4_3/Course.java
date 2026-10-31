@@ -1,6 +1,8 @@
 package ru.skaldytskiivladislav.task4_3;
 
 public record Course(int id, String title, String instructor, int durationHours, double price) {
+    public static final int PREMIUM_COURSE = 5000;
+
     public Course {
         if (title == null || title.isBlank()) {
             throw new IllegalArgumentException("Название не может быть пустым");
@@ -16,7 +18,7 @@ public record Course(int id, String title, String instructor, int durationHours,
     }
 
     public boolean isPremium() {
-        return price > 5000;
+        return price > PREMIUM_COURSE;
     }
 
     public String shortDescription() {

@@ -1,4 +1,4 @@
-package ru.skaldytskiivladislav.task5_1;
+package ru.skaldytskiivladislav.task5_1.task5_1_1;
 
 public class Developer extends Employee {
     private String programmingLanguage;

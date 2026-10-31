@@ -57,8 +57,8 @@ public class Bank {
         ivan.deposit(10000, "Фриланс");
         ivan.withdraw(15000, "Аренда квартиры");
         ivan.withdraw(5000, "Продукты");
-        alex.withdraw(10000,"Test");
-        alex.deposit(-1000,"Test");
+        alex.withdraw(10000, "Test");
+        alex.deposit(-1000, "Test");
 
         mari.deposit(10000, "Накопления");
 
